@@ -22,17 +22,23 @@ const Button = styled.button`
 const Input = styled.input`
   border: 1px solid #ddd;
   border-radius: 5px;
+  padding: 0.8rem 1.2rem;
+`;
+
+const StyledApp = styled.main`
+  background-color: orangered;
+  padding: 20px;
 `;
 function App() {
   return (
     <>
       <GlobalStyles />
-      <div>
+      <StyledApp>
         <H1>The wild oasis</H1>
         <Button onClick={() => alert("Checking in")}>Check In</Button>
         <Button onClick={() => alert("Checking out")}>Check Out</Button>
-        <Input />
-      </div>
+        <Input type="number" placeholder="Number of guests" />
+      </StyledApp>
     </>
   );
 }
